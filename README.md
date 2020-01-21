@@ -51,7 +51,7 @@ An example.
 Now, as a discussion point, let’s assume that you have a regular Angular CLI based project and you need to load in the base location of your REST endpoints. You might have a config.json file that looks something like this:
 ```javascript
 {
-    "baseUrl": "https://davembush.github.io/api"
+    "baseUrl": "https://github.com/mortenaho/api"
 }
 ```
 You would create a different one of these for each of the environments you wanted to deploy to, and, as part of your deployment process, you would copy the appropriate file to config.json in the same location that you deploy all of your Angular CLI generated static files.
