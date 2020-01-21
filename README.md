@@ -194,7 +194,7 @@ http.get('./config.json')
      if (x.status !== 404) {
        resolve(false);
      }
-     config.baseUrl = 'http://localhost:8080/api';
+     config.baseUrl = 'http://localhost:5000';
      resolve(true);
      return of({});
    })
@@ -219,7 +219,7 @@ import { HttpClientModule, HttpClient } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { ConfigService } from './config.service';
-import { of, Observable, ObservableInput } from '../../node_modules/rxjs';
+import { of, Observable, ObservableInput } from 'rxjs';
 import { map, catchError } from 'rxjs/operators';
 
 function load(http: HttpClient, config: ConfigService): (() => Promise<boolean>) {
@@ -235,7 +235,7 @@ function load(http: HttpClient, config: ConfigService): (() => Promise<boolean>)
              if (x.status !== 404) {
                resolve(false);
              }
-             config.baseUrl = 'http://localhost:8080/api';
+             config.baseUrl = 'http://localhost:5000';
              resolve(true);
              return of({});
            })
