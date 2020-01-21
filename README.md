@@ -1,4 +1,4 @@
-# Angular-Configurations-
+# Angular-Configurations
 Where To Store Angular Configurations 
 
 Because this is a frequent problem, because it is so often done incorrectly and because there is a great alternative, today I want to discuss where to store Angular configurations. You know, all that information that changes as you move from your local development environment to the Development, QA and Production servers?
